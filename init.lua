@@ -2,26 +2,15 @@ require('basics')
 require('colors')
 require('telescope-config')
 require('coc-config')
+require('treesitter-config')
 
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all",
-  ignore_install = { "phpdoc" },
-  context_commentstring = {
-    enable = true
-  },
-  highlight = {
-    enable = true,
-    disable = { "lua" }
-  },
-  indent = {
-    enable = true
-  }
-}
+-- require 'nvim-treesitter.install'.compilers = { "clang" }
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'folke/tokyonight.nvim'
+  use 'arcticicestudio/nord-vim'
   use 'nvim-treesitter/nvim-treesitter' 
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
