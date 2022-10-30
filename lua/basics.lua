@@ -24,13 +24,16 @@ vim.o.mouse = 'a'
 
 local options = { noremap = true }
 
-vim.api.nvim_set_keymap("n", "<leader>s", ":source $MYVIMRC<CR>", options)
+vim.api.nvim_set_keymap("n", "<leader>s", ":source %<CR>", options)
 
 vim.api.nvim_set_keymap("i", "ii", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "kj", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "kk", "<Esc>", options)
+
+vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', options)
+vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', options)
 
 vim.api.nvim_set_keymap('n', 'vs', ':vs<CR>', options)
 vim.api.nvim_set_keymap('n', 'sp', ':sp<CR>', options)

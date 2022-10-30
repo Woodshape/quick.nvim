@@ -18,6 +18,8 @@ return require('packer').startup(function()
 
   use 'nvim-treesitter/nvim-treesitter' 
 
+  use 'christoomey/vim-tmux-navigator'
+
   use {
     'nvim-lualine/lualine.nvim',
     require('lualine').setup {
