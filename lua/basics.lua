@@ -26,7 +26,6 @@ local options = { noremap = true }
 
 vim.api.nvim_set_keymap("n", "<leader>s", ":source %<CR>", options)
 
-vim.api.nvim_set_keymap("i", "ii", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", options)
 vim.api.nvim_set_keymap("i", "kj", "<Esc>", options)
