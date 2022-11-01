@@ -11,10 +11,11 @@ return require('packer').startup(function()
 
   use {'neoclide/coc.nvim', branch = 'release'}
 
-  use 'folke/tokyonight.nvim'
-  use 'arcticicestudio/nord-vim'
-  use 'savq/melange'
-  use 'sainnhe/sonokai'
+  use "catppuccin/nvim"
+  -- use 'folke/tokyonight.nvim'
+  -- use 'arcticicestudio/nord-vim'
+  -- use 'savq/melange'
+  -- use 'sainnhe/sonokai'
 
   use 'nvim-treesitter/nvim-treesitter' 
 
