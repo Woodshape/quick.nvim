@@ -15,7 +15,7 @@ return require('packer').startup(function()
   -- use 'folke/tokyonight.nvim'
   -- use 'arcticicestudio/nord-vim'
   -- use 'savq/melange'
-  -- use 'sainnhe/sonokai'
+  use 'sainnhe/sonokai'
 
   use 'nvim-treesitter/nvim-treesitter' 
 
