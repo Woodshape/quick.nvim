@@ -1,0 +1,98 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "godot_tools.gdscript_lsp_server_port": 6005,
+    "editor.lineNumbers": "relative",
+
+    //  VIM
+    "vim.leader": "<space>",
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+    "vim.easymotion": true,
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<Leader>", "j"],
+            "after": ["J"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        {
+            "before": ["<leader>", ":"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<leader>", "t"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["extension.fuzzySearch"]
+        },
+
+        //   Tabs
+        {
+            "before": ["<Leader>", "t", "t"],
+            "commands": [":tabnew"]
+        },
+        {
+            "before": ["<Leader>", "t", "n"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<Leader>", "t", "p"],
+            "commands": [":tabprev"]
+        },
+        {
+            "before": ["<Leader>", "t", "o"],
+            "commands": [":tabo"]
+        },
+
+        //  Remove highlights
+        {
+            "before": ["<Leader>", "/"],
+            "commands": [":noh"]
+        }
+    ],
+
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["p"],
+            "after": ["p", "g", "v", "y"]
+        },
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        },
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        }
+    ]
+}
